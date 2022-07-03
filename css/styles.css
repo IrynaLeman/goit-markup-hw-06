@@ -771,7 +771,12 @@ margin-left: auto;
 }
 .label-name {
     margin-bottom: 4px;
-}
+    color: var(--second-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17px;
+    letter-spacing: 0.01em;
+    }
 .input-data {
     margin: 0;
     padding: 11px 12px;
