@@ -366,16 +366,27 @@
             </button>
             <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
             <form class="modal-form">
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name"/>
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel"/>
-                <label for="modal-e-mail">Почта</label>
-                <input type="email" name="e-mail" id="modal-e-mail"/>
-                <label for="comment">Комментарий</label>
-                <textarea name="comment" id="comment" rows="10"></textarea>
-                <label for="checkbox">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
-                <input type="checkbox" name="agree" id="agree">
+                <div class="form-data">
+                    <label for="name">Имя</label>
+                    <input class="input-data" type="text" name="name" id="name" />
+                </div>
+                <div class="form-data">
+                    <label for="tel">Телефон</label>
+                    <input class="input-data" type="tel" name="tel" id="tel" />
+                </div>
+                <div class="form-data">
+                    <label for="modal-e-mail">Почта</label>
+                    <input class="input-data" type="email" name="e-mail" id="modal-e-mail" />
+                </div>
+                <div class="comment">
+                    <label for="comment">Комментарий</label>
+                    <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                </div>
+                <div>
+                    <label for="agree">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
+                    <input type="checkbox" name="agree" id="agree">
+                </div>            
+                <button class="button-submit" type="submit">Отправить</button>
 
             </form>
         </div>
