@@ -351,9 +351,15 @@
                 </ul>    
             </div>
             <form class="footer-form">
-                <label for="e-mail">Подпишитесь на рассылку</label>
-                <input type="email" name="e-mail" id="e-mail" placeholder="E-mail"/>
-                <button type="submit">Подписаться</button>
+                <div class="sign-form">
+                    <label class="sign" for="e-mail">Подпишитесь на рассылку</label>
+                    <input class="footer-input" type="email" name="e-mail" id="e-mail" placeholder="E-mail" />
+                </div>
+                <button class="button-sign" type="submit">Подписаться
+                    <svg class="icon-send" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-send"></use>
+                    </svg>
+                </button>
             </form>
         </div>
     </footer>
@@ -382,9 +388,9 @@
                     <label class="label-name" for="comment">Комментарий</label>
                     <textarea class="textarea" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
                 </div>
-                <div>
-                    <label for="agree">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
+                <div class="agreement">
                     <input type="checkbox" name="agree" id="agree">
+                    <label class="agree-label" for="agree">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
                 </div>            
                 <button class="button-submit" type="submit">Отправить</button>
 
