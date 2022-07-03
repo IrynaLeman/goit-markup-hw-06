@@ -350,6 +350,11 @@
                     </li>
                 </ul>    
             </div>
+            <form class="footer-form">
+                <label for="e-mail">Подпишитесь на рассылку</label>
+                <input type="email" name="e-mail" id="e-mail"/>
+                <button type="submit">Подписаться</button>
+            </form>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -359,6 +364,20 @@
                     <use href="./images/sprite.svg#icon-close"></use> 
                 </svg>
             </button>
+            <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name"/>
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel"/>
+                <label for="modal-e-mail">Почта</label>
+                <input type="email" name="e-mail" id="modal-e-mail"/>
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="comment" rows="10"></textarea>
+                <label for="checkbox">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
+                <input type="checkbox" name="agree" id="agree">
+
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
