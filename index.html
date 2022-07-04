@@ -375,14 +375,23 @@
                 <div class="form-data">
                     <label class="label-name" for="name">Имя</label>
                     <input class="input-data" type="text" name="name" id="name" autofocus/>
+                    <svg class="modal-form-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-person-black"></use>
+                    </svg>
                 </div>
                 <div class="form-data">
                     <label class="label-name" for="tel">Телефон</label>
                     <input class="input-data" type="tel" name="tel" id="tel" />
+                    <svg class="modal-form-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-phone-black"></use>
+                    </svg>
                 </div>
                 <div class="form-data">
                     <label class="label-name" for="modal-e-mail">Почта</label>
                     <input class="input-data" type="email" name="e-mail" id="modal-e-mail" />
+                    <svg class="modal-form-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-email-black"></use>
+                    </svg>
                 </div>
                 <div class="form-data">
                     <label class="label-name" for="comment">Комментарий</label>
@@ -390,7 +399,11 @@
                 </div>
                 <div class="agreement">
                     <input type="checkbox" name="agree" id="agree">
-                    <label class="agree-label" for="agree">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
+                    <label class="agree-label" for="agree">Соглашаюсь с рассылкой и принимаю 
+                        <a class="agreement-conditions" href="#">
+                            Условия договора
+                        </a>
+                    </label>
                 </div>            
                 <button class="button-submit" type="submit">Отправить</button>
 
