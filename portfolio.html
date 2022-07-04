@@ -260,13 +260,24 @@
                     </li>
                     <li class="item nets-footer">
                         <a class="link" href="#">
-                            <svg class="icon-footer-net" width="20" height="20">
+                            <svg class="icon-footer-net" aria-label="закрыть окно" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
-    
+                </ul>
             </div>
+            <form class="footer-form">
+                <div class="sign-form">
+                    <label class="sign" for="e-mail">Подпишитесь на рассылку</label>
+                    <input class="footer-input" type="email" name="e-mail" id="e-mail" placeholder="E-mail" />
+                </div>
+                <button class="button-sign" type="submit">Подписаться
+                    <svg class="icon-send" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </footer>
 
