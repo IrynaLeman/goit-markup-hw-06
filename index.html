@@ -398,8 +398,10 @@
                     <textarea class="textarea" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
                 </div>
                 <div class="agreement">
-                    <input type="checkbox" name="agree" id="agree">
-                    <label class="agree-label" for="agree">Соглашаюсь с рассылкой и принимаю 
+                    <label class="agree-label">
+                        <input class="checkbox visually-hidden" type="checkbox" name="agree">
+                        <span class="checkbox-icon"></span>
+                        Соглашаюсь с рассылкой и принимаю 
                         <a class="agreement-conditions" href="#">
                             Условия договора
                         </a>
