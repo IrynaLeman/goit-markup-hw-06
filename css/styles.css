@@ -822,6 +822,7 @@ background-image: url(../images/clock\ \(1\).svg);
     color: var(--nav-color);
     }
 .form-data {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -836,8 +837,7 @@ background-image: url(../images/clock\ \(1\).svg);
     }
 .input-data {
     width: 100%;
-    margin-bottom: 10px;
-    padding: 11px 12px;
+    padding: 11px 12px 11px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }    
@@ -850,8 +850,16 @@ background-image: url(../images/clock\ \(1\).svg);
 .form-data {
     color: var(--nav-color);
 }
+.icon-position {
+    position: relative;
+    padding: 0;
+}
 .modal-form-icon {
-    /*position: relative;*/
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    transform: translateY(-50%);
+
     fill: currentColor
 }
 .form-data textarea::placeholder {
@@ -861,10 +869,21 @@ background-image: url(../images/clock\ \(1\).svg);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
+.form-data:focus-within > .modal-form-icon {
+    color: var(--accent-color);
+}
+.form-data:focus-within>.input-data {
+    border: 1px solid var(--accent-color);
+}
+
 .textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
+    min-height: 120px;
+}
+.textarea:not(:placeholder-shown) {
+    border: 1px solid var(--accent-color);
 }
 .agreement {
 display: flex;
