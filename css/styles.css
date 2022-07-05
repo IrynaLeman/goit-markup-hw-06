@@ -843,9 +843,7 @@ background-image: url(../images/clock\ \(1\).svg);
     border-radius: 4px; 
     transition: border-color 250ms var(--timing);
 }    
-.input-data:hover,
 .input-data:focus,
-.textarea:hover,
 .textarea:focus {
     outline: none;
     border: 1px solid var(--accent-color);
