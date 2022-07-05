@@ -847,6 +847,7 @@ background-image: url(../images/clock\ \(1\).svg);
 .input-data:focus,
 .textarea:hover,
 .textarea:focus {
+    outline: none;
     border: 1px solid var(--accent-color);
 }
 
@@ -885,6 +886,7 @@ background-image: url(../images/clock\ \(1\).svg);
     border-radius: 4px;
     padding: 12px 16px;
     min-height: 120px;
+    transition: border-color 250ms var(--timing);
 }
 .textarea:not(:placeholder-shown) {
     border: 1px solid var(--accent-color);
