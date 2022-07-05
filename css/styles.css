@@ -875,7 +875,8 @@ background-image: url(../images/clock\ \(1\).svg);
 .form-data:focus-within > .modal-form-icon {
     color: var(--accent-color);
 }
-.form-data:focus-within>.input-data {
+.label-name:focus-within>.input-data {
+    color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
 
@@ -889,15 +890,17 @@ background-image: url(../images/clock\ \(1\).svg);
     border: 1px solid var(--accent-color);
 }
 .agreement {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 }
+.taking {
+    padding-left: 23px;
+}
 .agree-label {
+    position: relative;
+
     margin-left: 7px;
 
     font-size: 14px;
@@ -905,8 +908,36 @@ background-image: url(../images/clock\ \(1\).svg);
     color: var(--second-color);
 }
 .agreement-conditions {
+    margin-left: 7px;
     color: var(--accent-color);
 }
+
+.checkbox-icon {
+    z-index: 1;
+    color: var(--main-color);
+    background-color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
+}
+.icon-check {
+    fill: currentColor;
+    background-color: var(--white-color);
+}
+
+.checkbox:checked + .checkbox-icon {
+    opacity: 0;
+}
+.checkbox-icon-blue {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
+}
+/*
 .checkbox-icon {
     display: inline-block;
     width: 16px;
@@ -922,7 +953,7 @@ background-image: url(../images/clock\ \(1\).svg);
     background-position: center;
     background-color: var(--accent-color);
 }
-
+*/
 .button-submit {
     display: block;
     margin-left: auto;
